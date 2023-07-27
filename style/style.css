@@ -4,11 +4,26 @@
     display: contents;
 }
 
-.debug .col-2 {
-    background-color: yellowgreen;
+/* main */
+
+.main_container {
+    height: 600px;
+    background-color: blue;
 }
 
-.debug .col-6 {
-    background-color: aquamarine;
-    border: 1px solid black;
+/* side bar */
+
+.side_bar {
+    height: 100%;
+    background-color: red;
+}
+
+
+
+
+/* principal container */
+
+.principal_container {
+    height: 100%;
+    background-color: green;
 }
