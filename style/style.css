@@ -3,3 +3,12 @@
 .display_contents {
     display: contents;
 }
+
+.debug .col-2 {
+    background-color: yellowgreen;
+}
+
+.debug .col-6 {
+    background-color: aquamarine;
+    border: 1px solid black;
+}
