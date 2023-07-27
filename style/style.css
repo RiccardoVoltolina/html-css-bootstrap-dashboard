@@ -21,26 +21,16 @@
 
 /* principal container */
 
-.principal_container {
-    height: 100%;
-    background-color: green;
-}
 
-.principal_container .col-sm-12 {
-    border: 1px solid white;
-    height: 300px;
-}
 
 /* statistic section */
+
 
 /* left main section */
 
 /* prossime classi */
 
-.prossime_classi {
-    background-color: yellow;
-    height: 100px;
-}
+
 /* faq */
 
 /* right main section */
@@ -48,4 +38,3 @@
 /* todo */
 
 /* graphics */
-
