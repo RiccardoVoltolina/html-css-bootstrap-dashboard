@@ -94,19 +94,64 @@
             <!-- statistic section -->
 
 
-                <section class="col-12 bg-black statistic_section">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4">
+                <section class="col-12 bg-black statistic_section p-3">
+                    <div class="row align-items-start">
+                        <div class="col-sm-12 col-md-4 col-lg-3 order-lg-2 order-md-2">
                             <div class="d-flex">
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
                                         <h5>Nuovo Studente</h5>
+                                        
+                                        <!-- prova -->
+                                        <span type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">#</span>
+    
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message to @getbootstrap</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                                            <input type="text" class="form-control" id="recipient-name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Message:</label>
+                                                                            <textarea class="form-control" id="message-text"></textarea>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Send message</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                        <!-- fine prova -->
+
+
                                     </div>
                                 </div>
                             </div>
     
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-6 col-lg-3">
+                        <div class="col-sm-12 col-md-4 col-lg-6 order-lg-1 order-md-1">
                             <div class="d-flex flex-column">
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
@@ -128,8 +173,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-3">
-    
+                        <div class="col-sm-12 col-md-4 col-lg-3 order-lg-3 order-md-3">
+                            <div class="d-flex flex-column">
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <h5>Studenti online negli ultimi 30 minuti</h5>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <strong>125</strong>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -187,19 +241,40 @@
 
 
 
-<!-- <div class="col-6 d-flex flex-column align-items-center">
-    <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
-    </a>
-    <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
-    </a>
-    <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
-    </a>
-</div>
-<div class="col-6">
-    <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
-    </a>
-</div> -->
+<!-- <div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message to @getbootstrap</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
