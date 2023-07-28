@@ -2,12 +2,17 @@
   --boot-side:#0d253b;
   --boot-stats:#1b72e8;
   --boot-button-strong:#165bba;
+  --boot-search:#e5e5e5;
 }
 
 /* header */
 
 .display_contents {
     display: contents;
+}
+
+.color_searchbar {
+    background-color: var(--boot-search);
 }
 
 /* main */
