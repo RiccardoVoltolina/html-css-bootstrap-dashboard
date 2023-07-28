@@ -1,3 +1,9 @@
+:root {
+  --boot-side:#0d253b;
+  --boot-stats:#1b72e8;
+  --boot-button-strong:#165bba;
+}
+
 /* header */
 
 .display_contents {
@@ -13,7 +19,8 @@
 /* side bar */
 
 .side_bar {
-    background-color: red;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--boot-side);
 }
 
 .bottoni_boolean button {
@@ -27,6 +34,15 @@
 
 
 /* statistic section */
+
+.statistic_section {
+    background-color: var(--boot-stats);
+}
+
+.button_strong {
+    background-color: var(--boot-button-strong);
+    color: white;
+}
 
 
 /* left main section */

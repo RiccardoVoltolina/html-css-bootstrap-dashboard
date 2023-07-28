@@ -14,22 +14,22 @@
     crossorigin='anonymous' referrerpolicy='no-referrer' />
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-danger navbar-expand-md">
+    <header class="bg-white">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
               <div class="col-2">
                   <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top w-100">
-                  </a>
+                    <img src="./img/logo.svg" alt="Logo" width="30" height="24" class="d-lg-inline-block align-text-top w-100 d-md-none d-sm-none">
+                    <img class="d-lg-none ms-4" width="40px" src="./img/mobile-logo.png" alt="logo boolean">                  </a>
               </div>
               <div class="col-8">
                   <form role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control bg-secondary-subtle" type="search" placeholder="&telrec; Prova a cercare: Lezioni di Lavarel" aria-label="Search">
                   </form>
               </div>
               <div class="col-2 display_contents">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bell text-warning"></i>
                   </button>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -39,22 +39,22 @@
                     <div class="offcanvas-body">
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                            <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-circle-question"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-bell text-warning"></i>
                           </a>
                           <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -74,15 +74,15 @@
                         <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
                     </a>
                     <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-                        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
+                        <i class="fa fa-chart-simple pe-2" aria-hidden="true"></i><div class="d-none d-lg-block">Stats</div>
                     </a>
                     <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-                        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
+                        <i class="fa fa-signal pe-2" aria-hidden="true"></i><div class="d-none d-lg-block">Signals</div>
                     </a>
                 </div>
                 <div class="col-12">
                     <a class="text-decoration-none text-white d-flex justify-content-center align-items-center py-2">
-                        <i class="fa-solid fa-house pe-2"></i><div class="d-none d-lg-block">Home</div>
+                        <i class="fa-solid fa-gear pe-2"></i><div class="d-none d-lg-block">Admin</div>
                     </a>
                 </div>
             </div>
@@ -94,16 +94,16 @@
             <!-- statistic section -->
 
 
-                <section class="col-12 bg-black statistic_section p-3">
+                <section class="col-12 statistic_section p-3">
                     <div class="row align-items-start">
                         <div class="col-sm-12 col-md-4 col-lg-3 order-lg-3 order-md-3">
                             <div class="d-flex justify-content-md-end justify-content-lg-end">
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
-                                        <h5>Nuovo Studente</h5>
+                                        <h5 class="text-white">Nuovo Studente</h5>
                                         
                                         <!-- prova -->
-                                        <span type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">#</span>
+                                        <span type="button" class="ps-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa fa-plus btn btn-outline-light"></i></span>
     
                                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
                                             <div class="modal-dialog modal-fullscreen-md-down">
@@ -155,20 +155,20 @@
                             <div class="d-flex flex-column">
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
-                                        <h2>Boolean</h2>
+                                        <h2 class="text-white">Boolean</h2>
                                         <div class="ps-2">
-                                            <button type="button" class="btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Piano blaze</button>
+                                            <button type="button" class="btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Piano blaze</button>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex align-items-center bottoni_boolean">
-                                        <button type="button" class=" btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">3 app</button>
-                                        <a class="px-md-2 px-sm-2" href="#">
-                                            <div>#</div>
-                                        </a>
-                                        <button type="button" class="d-lg-none btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">+</button>
-                                        <button type="button" class="d-sm-none d-lg-block btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean mobile app</button>
-                                        <button type="button" class="d-sm-none d-lg-block btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean web app</button>
-                                        <button type="button" class="d-sm-none d-lg-block btn btn-primary rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean blog app</button>
+                                        <button type="button" class=" btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">3 app</button>
+                                        <div class="ps-2">
+                                            <a class="text-white" href="#"><i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                        <button type="button" class="d-lg-none btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">+</button>
+                                        <button type="button" class="d-sm-none d-lg-block btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean mobile app</button>
+                                        <button type="button" class="d-sm-none d-lg-block btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean web app</button>
+                                        <button type="button" class="d-sm-none d-lg-block btn button_strong rounded-pill" style="--bs-btn-padding-y: .1px; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .75rem;">Boolean blog app</button>
                                     </div>
                                 </div>
                             </div>
@@ -177,10 +177,10 @@
                             <div class="d-flex flex-column">
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
-                                        <h5>Studenti online negli ultimi 30 minuti</h5>
+                                        <h5 class="text-white">Studenti online negli ultimi 30 minuti</h5>
                                     </div>
                                     <div class="col-12 d-flex align-items-center">
-                                        <strong>125</strong>
+                                        <h3 class="text-white">125</h3>
                                     </div>
                                 </div>
                             </div>
@@ -538,7 +538,33 @@
             <!-- graphics section -->
 
 
-                            <div class="col-12 graphics"></div>
+                            <div class="col-12 graphics pt-3">
+                                <div class="card">
+                                    <div class="card m-3">
+                                        <img src="./img/stats.jpeg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3>Utenti attivi</h3>
+                                            <div>Lista degli utenti attivi in piattaforma nell' ultimo mese</div>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Gennaio: 1200
+                                            </li>
+                                            <li class="list-group-item">
+                                                Febbraio: 800
+                                            </li>
+                                            <li class="list-group-item">
+                                                Marzo:1500
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">Visualizza report approfondito</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
 
                         </section>
                     </div>
