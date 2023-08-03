@@ -106,89 +106,83 @@
                                         <h5 class="text-white">Nuovo Studente</h5>
                                         
                                         <!-- prova -->
-                                        <span type="button" class="ps-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa fa-plus btn btn-outline-light"></i></span>
-    
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-                                            <div class="modal-dialog modal-fullscreen-md-down">
-                                                <div class="modal-content">
-                                                    <div class="modal-header border-0">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Inserisci un nuovo studente</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="container-fluid">
-                                                                <div class="row">
-                                                                    <div class="col-6">
-                                                                        <div class="mb-3">Nome</label>
-                                                                            <input type="text" class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <div class="mb-3">Cognome</label>
-                                                                            <input type="text" class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label for="email" class="form-label">Email</label>
-                                                                        <div class="input-group">
-                                                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                                                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <div class="mb-3">Indirizzo</label>
-                                                                            <input type="text" class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <div class="mb-3">Città</label>
-                                                                            <input type="text" class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <div class="mb-3">Stato</label>
-                                                                            <input type="text" placeholder="Scegli..." class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <div class="mb-3">CAP</label>
-                                                                            <input type="text" class="form-control" id="recipient-name">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <label for="email" class="form-label">Foto</label>
-                                                                        <div class="input-group">
-                                                                            <span class="input-group-text" id="basic-addon1">Scegli file</span>
-                                                                            <input type="text" placeholder="Nessun file selezionato" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 mt-3">
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                                              Seleziona per proseguire
-                                                                            </label>
-                                                                          </div>
-                                                                    </div>
-                                
-
-                                                                </div>
+                                        <span type="button" class="ps-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa fa-plus btn btn-outline-light"></i></span>
+                                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                            <div class="offcanvas-header">
+                                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Nome</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
                                                             </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer border-0 justify-content-start">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salva</button>
-                                                        <button type="button" class="btn bg-warning">Svuota</button>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Cognome</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="email" class="form-label">Email</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="mb-3">Indirizzo</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Città</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="input-group mb-3 mt-4">
+                                                                <input type="text" placeholder="Scegli..." class="form-control border-end-0" aria-label="Username" aria-describedby="basic-addon1">
+                                                                <span class="input-group-text bg-white"><i class="fa-solid fa-chevron-down"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="mb-3">CAP</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="email" class="form-label">Foto</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                                                                <input type="text" placeholder="Nessun file selezionato" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                  Seleziona per proseguire
+                                                                </label>
+                                                              </div>
+                                                              <div class="modal-footer border-0 justify-content-start mt-3">
+                                                                <button type="button" class="btn btn-primary me-1" data-bs-dismiss="modal">Salva</button>
+                                                                <button type="button" class="btn bg-warning">Svuota</button>
+                                                            </div>
+                                                        </div>
+                    
+
                                                     </div>
                                                 </div>
+                                  
                                             </div>
                                         </div>
-
                                         
 
                                         <!-- fine prova -->

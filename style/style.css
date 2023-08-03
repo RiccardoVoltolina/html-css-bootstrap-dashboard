@@ -66,3 +66,16 @@
 /* todo */
 
 /* graphics */
+
+
+@media screen and (min-width: 576px) {
+    #offcanvasWithBothOptions {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #offcanvasWithBothOptions {
+        width: 50%;
+    }
+}
